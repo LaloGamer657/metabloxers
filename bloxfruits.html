@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blox Fruits - Metabloxers</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .aura-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: nowrap;
+      margin: 40px auto;
+      max-width: 1200px;
+      overflow-x: auto;
+    }
+
+    .aura-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .aura-card img {
+      width: 360px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .aura-card:hover img {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px 10px yellow;
+    }
+
+    .aura-label {
+      margin-top: 12px;
+      font-size: 20px;
+      color: #ffd700;
+      border-bottom: 1px solid #ffd700;
+    }
+
+    @media (max-width: 1000px) {
+      .aura-section {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .aura-card img {
+        width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="blox-container">
+    <!-- Barra superior -->
+    <div class="navbar">
+      <img src="https://i.postimg.cc/xjBzHFjj/Captura-de-pantalla-2025-08-01-222851-1.png" alt="Blox Fruits Logo" class="logo">
+      <div class="nav-links">
+        <a href="fruits.html">🍍 Fruits</a>
+        <a href="codes.html">🎁 Codes</a>
+        <a href="update.html">🛠️ Update</a>
+        <a href="races.html">🧬 Races</a>
+        <a href="fstyles.html">🥋 F.Styles</a>
+      </div>
+    </div>
+
+    <!-- Título principal -->
+    <h1 class="main-title">Blox Fruits</h1>
+
+    <!-- Imagen principal + tabla + botón -->
+    <div class="main-section">
+      <div class="main-image">
+        <img src="https://i.postimg.cc/PxTkBHMf/blox-fruits.webp" alt="Blox Fruits Banner">
+        <a href="https://www.roblox.com/games/2753915549/Blox-Fruits" target="_blank" class="play-button">Play Bloxfruits Now</a>
+      </div>
+
+      <table class="info-table">
+        <tr><th>Features</th><th>Details</th></tr>
+        <tr><td>Active Users</td><td>???</td></tr>
+        <tr><td>Version</td><td>#27</td></tr>
+        <tr><td>Category</td><td>Adventure</td></tr>
+        <tr><td>Visits</td><td>+55B</td></tr>
+      </table>
+    </div>
+
+    <!-- Wiki bienvenida -->
+    <h2 class="wiki-title">Bienvenido a la wiki de Bloxfruit</h2>
+
+    <!-- Sección de imágenes con aura -->
+    <div class="aura-section">
+      <!-- New Codes -->
+      <a href="codes.html" class="aura-card">
+        <img src="https://i.postimg.cc/65ZsMTrJ/Captura-de-pantalla-2025-08-01-235119.png" alt="New Codes">
+        <div class="aura-label">New Codes</div>
+      </a>
+
+      <!-- Update #27 -->
+      <a href="update.html" class="aura-card">
+        <img src="https://i.postimg.cc/7YjzytJJ/Captura-de-pantalla-2025-08-01-235745.png" alt="Update">
+        <div class="aura-label">Update #27</div>
+      </a>
+
+      <!-- All Fruits -->
+      <a href="fruits.html" class="aura-card">
+        <img src="https://i.postimg.cc/wM0SmsJn/Captura-de-pantalla-2025-08-02-001012.png" alt="All Fruits">
+        <div class="aura-label">All Fruits</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
