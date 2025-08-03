@@ -252,7 +252,7 @@ h1 {
 
 
 body {
-  background-color: #1a1f16;
+  background-color: #141419;
   color: #ccc;
   font-family: sans-serif;
   margin: 0;
@@ -261,11 +261,11 @@ body {
 
 .rainbow-border {
   display: block;
-  padding: 12px; /* antes estaba en 6px */
+  padding: 10px;
   border-radius: 16px;
   background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-  background-size: 300% 300%;
-  animation: rainbow-border 5s linear infinite;
+  background-size: 400% 400%;
+  animation: rainbow-border 8s linear infinite;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
   max-width: 1000px;
   margin: auto;
@@ -273,7 +273,7 @@ body {
 
 
 .rainbow-inner {
-  background-color: #1a1f16;
+  background-color: #141419;
   border-radius: 12px;
   padding: 1.5rem;
 }
@@ -293,7 +293,7 @@ body {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: #020303;
+  background-color: #141419;
   border-radius: 50%;
   margin-right: 0.5rem;
 }
