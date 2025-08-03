@@ -249,3 +249,25 @@ h1 {
   width: auto;
   object-fit: contain;
 }
+
+
+.rainbow-border {
+  padding: 3px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 300% 300%;
+  animation: rainbow-border 5s linear infinite;
+}
+
+.rainbow-inner {
+  background-color: #1a1f16;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+@keyframes rainbow-border {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
