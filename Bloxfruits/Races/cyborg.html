@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Raza Cyborg</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #222;
+      color: #f0f0f0;
+    }
+
+    .header-bar {
+      background-color: #f5a2dc;
+      color: rgb(255, 8, 0);
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .gif-section {
+      text-align: center;
+    }
+
+    .gif-section img {
+      width: 200px;
+      border-radius: 12px;
+    }
+
+    .gif-section h2 {
+      color: rgb(255, 30, 0);
+      text-decoration: underline;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .info-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      background-color: #111;
+      border: 2px solid #0077cc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .info-table th, .info-table td {
+      border: 1px solid #0077cc;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .info-table th {
+      background-color: #222;
+      color: #00ccff;
+      font-weight: bold;
+    }
+
+    .info-table td {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="header-bar">
+    Raza Cyborg
+  </div>
+
+  <div class="content">
+    <div class="gif-section">
+      <img src="/Bloximagenes/CyborgV4_Idle.gif" alt="Human Gif">
+      <h2>Cyborg</h2>
+    </div>
+
+    <table class="info-table">
+      <tr>
+        <th>Habilidad</th>
+        <th>Adquirir</th>
+        <th>NPC</th>
+        <th>Requisitos</th>
+        <th>Robux</th>
+      </tr>
+      <tr>
+        <td>Gran regeneración de energía además de dar un extra de defensa.</td>
+        <td>Para adquirir esta raza tendrás que completar el puzle de Ciborg</td>
+        <td>Una vez completado el puzle pagas 2500 fragmentos para adquirir la raza.</td>
+        <td>No</td>
+        <td>No</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

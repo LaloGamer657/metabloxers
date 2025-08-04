@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blox Fruits - Metabloxers</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .aura-section {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: nowrap;
+      margin: 40px auto;
+      max-width: 1200px;
+      overflow-x: auto;
+    }
+
+    .aura-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .aura-card img {
+      width: 360px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .aura-card:hover img {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px 10px yellow;
+    }
+
+    .aura-label {
+      margin-top: 12px;
+      font-size: 20px;
+      color: #ffd700;
+      border-bottom: 1px solid #ffd700;
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+      justify-items: center;
+    }
+
+    .grid-card {
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .grid-card img {
+      width: 120px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .grid-label {
+      margin-top: 8px;
+      font-size: 16px;
+      color: #ffd700;
+      border-bottom: 1px solid #ffd700;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .search-bar input {
+      width: 60%;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .search-results {
+      text-align: center;
+      margin-top: 20px;
+      color: #ccc;
+    }
+
+    .info-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #00ff99;
+    }
+
+    .info-section p {
+      font-size: 18px;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    .qa-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 0 20px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .qa-item {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      color: #eee;
+    }
+
+    .discord-section {
+      text-align: center;
+      margin: 60px 0 40px;
+    }
+
+    .discord-section img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    .discord-section p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    @media (max-width: 900px) {
+      .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .qa-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+<!-- prueba -->
+
+<!-- prueba -->
+</head>
+<body>
+  <div class="blox-container">
+    <!-- Barra superior -->
+    <div class="blox-navbar">
+      <img src="https://i.postimg.cc/xjBzHFjj/Captura-de-pantalla-2025-08-01-222851-1.png" alt="Blox Fruits Logo" class="logo">
+      <div class="nav-links">
+        <a href="fruits.html">🍍 Fruits</a>
+        <a href="codes.html">🎁 Codes</a>
+        <a href="update.html">🛠️ Update</a>
+        <a href="races.html">🧬 Races</a>
+        <a href="fstyles.html">🥋 F.Styles</a>
+      </div>
+    </div>
+
+    <!-- Título principal -->
+    <h1 class="main-title">Blox Fruits</h1>
+
+    <!-- Imagen principal + tabla + botón -->
+    <div class="main-section">
+      <div class="main-image">
+        <img src="https://i.postimg.cc/PxTkBHMf/blox-fruits.webp" alt="Blox Fruits Banner">
+        <a href="https://www.roblox.com/games/2753915549/Blox-Fruits" target="_blank" class="play-button">Play Bloxfruits Now</a>
+      </div>
+
+      <table class="info-table">
+        <tr><th>Features</th><th>Details</th></tr>
+        <tr><td>Active Users</td><td>???</td></tr>
+        <tr><td>Version</td><td>#27</td></tr>
+        <tr><td>Category</td><td>Adventure</td></tr>
+        <tr><td>Visits</td><td>+55B</td></tr>
+      </table>
+    </div>
+
+    <!-- Wiki bienvenida -->
+    <h2 class="wiki-title">Bienvenido a la wiki de Bloxfruit</h2>
+
+    <!-- Imágenes grandes -->
+    <div class="aura-section">
+      <a href="codes.html" class="aura-card">
+        <img src="https://i.postimg.cc/65ZsMTrJ/Captura-de-pantalla-2025-08-01-235119.png" alt="New Codes">
+        <div class="aura-label">New Codes</div>
+      </a>
+      <a href="update.html" class="aura-card">
+        <img src="https://i.postimg.cc/7YjzytJJ/Captura-de-pantalla-2025-08-01-235745.png" alt="Update">
+        <div class="aura-label">Update #27</div>
+      </a>
+      <a href="fruits.html" class="aura-card">
+        <img src="https://i.postimg.cc/wM0SmsJn/Captura-de-pantalla-2025-08-02-001012.png" alt="All Fruits">
+        <div class="aura-label">All Fruits</div>
+      </a>
+    </div>
+
+    <!-- Imágenes pequeñas en dos filas -->
+    <div class="grid-section">
+      <a href="swords.html" class="grid-card">
+        <img src="https://i.postimg.cc/qRYrzD9p/Blox-Fruits-Wiki-SWORDS.webp" alt="Swords">
+        <div class="grid-label">Swords</div>
+      </a>
+      <a href="guns.html" class="grid-card">
+        <img src="https://i.postimg.cc/sDP2NykS/Blox-Fruits-Wiki-GUNS.webp" alt="Guns">
+        <div class="grid-label">Guns</div>
+      </a>
+      <a href="accessories.html" class="grid-card">
+        <img src="https://i.postimg.cc/cLsJq2Wz/asdasdasd.webp" alt="Accessories">
+        <div class="grid-label">Accessories</div>
+      </a>
+      <a href="fstyles.html" class="grid-card">
+        <img src="https://i.postimg.cc/vmTHTncL/asdasdasda.webp" alt="Fighting Styles">
+        <div class="grid-label">Fighting Styles</div>
+      </a>
+      <a href="races.html" class="grid-card">
+        <img src="https://i.postimg.cc/QMFhhryf/xdasdasd.webp" alt="Races">
+        <div class="grid-label">Races</div>
+      </a>
+
+      <a href="money.html" class="grid-card">
+        <img src="https://i.postimg.cc/qvRdxT4p/fuamigoxd.webp" alt="Money">
+        <div class="grid-label">Money</div>
+      </a>
+      <a href="fragments.html" class="grid-card">
+  <img src="https://i.postimg.cc/xdNDB3X7/fuamaigo.webp" alt="Fragments">
+  <div class="grid-label">Fragments</div>
+</a>
+      <a href="stats.html" class="grid-card">
+        <img src="https://i.postimg.cc/Ssb53FF2/xdxdxd.webp" alt="Stats">
+        <div class="grid-label">Stats</div>
+      </a>
+      <a href="belts.html" class="grid-card">
+        <img src="https://i.postimg.cc/L8bFyb8L/asdasdasdasdasda.webp" alt="Belts">
+        <div class="grid-label">Belts</div>
+      </a>
+      <a href="map.html" class="grid-card">
+        <img src="https://i.postimg.cc/0QgRvKmN/Blox-Fruits-Wiki-MAP.webp" alt="Map">
+        <div class="grid-label">Map</div>
+      </a>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+      <input type="text" placeholder="🔍 Buscar en Blox Fruits..." id="searchInput">
+      <div class="search-results" id="searchResults">Escribe algo para buscar información...</div>
+    </div>
+
+    <!-- Info general del juego -->
+    <div class="info-section">
+      <h2>Blox Fruits: Play One Piece in Roblox</h2>
+      <p>Blox Fruits es un popular juego de Roblox basado en el universo de One Piece, donde los jugadores pueden explorar islas, luchar contra enemigos y obtener poderes increíbles de las codiciadas Blox Fruits. Con múltiples modos de juego y una comunidad vibrante, Blox Fruits ofrece un desafío para jugadores de todos los niveles.</p>
+    </div>
+
+    <!-- Preguntas frecuentes en patrón de dos -->
+    <div class="qa-grid">
+      <div class="qa-item">
+        <h3>¿Qué es Blox Fruits?</h3>
+        <p>Blox Fruits es un popular juego de Roblox en el que los jugadores se embarcan en una aventura para convertirse en poderosos luchadores, encontrando y consumiendo frutas místicas que otorgan habilidades únicas.</p>
+      </div>
+      <div class="qa-item">
+        <h3>¿Cuánto tiempo lleva Blox Fruits en el mercado?</h3>
+        <p>Blox Fruits ha cautivado a los jugadores desde su lanzamiento en enero de 2019. Sus continuas actualizaciones lo han mantenido entre los favoritos de Roblox.</p>
+      </div>
+
+      <div class="qa-item">
+        <h3>¿Es popular Blox Fruits?</h3>
+        <p>Absolutamente, es uno de los juegos más aclamados de Roblox, con una base de jugadores activa y actualizaciones constantes.</p>
+      </div>
+      <div class="qa-item">
+        <h3>¿Cuál es el juego de Roblox más visitado en 2023?</h3>
+        <p>Juegos como Adopt Me! y Brookhaven 🏡RP lideraban las visitas. Para datos actualizados, consulta la plataforma oficial de Roblox.</p>
+      </div>
+
+      <div class="qa-item">
+        <h3>¿Quién creó Blox Fruits?</h3>
+        <p>Fue creado por el equipo mygame43 en Go Play Eclipsis, conocidos por su enfoque innovador en diseño de juegos.</p>
+      </div>
+      <div class="qa-item">
+        <h3>¿En qué se inspira Blox Fruits?</h3>
+        <p>Se inspira en One Piece, incorporando frutas misteriosas que otorgan poderes, similar a las frutas del diablo del anime.</p>
+      </div>
+
+      <div class="qa-item">
+        <h3>¿Quién es el administrador de Blox Fruits?</h3>
+        <p>El equipo de administración incluye desarrolladores y moderadores, pero sus nombres no se divulgan por privacidad.</p>
+      </div>
+      <div class="qa-item">
+        <h3>¿Es Rip_indra el dueño?</h3>
+        <p>Rip_indra es una figura destacada, pero el juego pertenece al equipo de desarrollo de Go Play Eclipsis.</p>
+      </div>
+
+      <div class="qa-item">
+        <h3>Manténgase al día con las últimas noticias y actualizaciones</h3>
+        <p>Sigue nuestra página para enterarte de eventos especiales, nuevas frutas, enemigos y más novedades.</p>
+      </div>
+      <div class="qa-item">
+        <h3>Blox Fruits: El juego definitivo de One Piece</h3>
+        <p>Explora nuestro sitio y sumérgete en el mundo de Blox Fruits. ¡Zarpemos juntos hacia la gran aventura!</p>
+      </div>
+    </div>
+
+   <!-- Discord -->
+<div class="discord-section">
+  <a href="https://discord.gg/DxpyGxdeHG" target="_blank" style="text-decoration: none; color: inherit;">
+    <img src="https://i.postimg.cc/d1ksmTPR/discord-logo-01-discord-logo-11562849833clsolz2mbc-removebg-preview.png" alt="Discord Logo">
+    <p>Únete a nuestro Discord para sugerencias o más novedades!</p>
+  </a>
+</div>
+
+
+  <!-- JS básico para búsqueda -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    const data = {
+      "Swords": "Todas las espadas disponibles en el juego con sus estadísticas.",
+      "Guns": "Armas de fuego y sus efectos en combate.",
+      "Accessories": "Accesorios que otorgan mejoras y habilidades.",
+      "Fighting Styles": "Estilos de pelea como Superhuman, Dragon Talon, etc.",
+      "Races": "Human, Mink, Fishman, Ghoul y Cyborg con sus habilidades.",
+      "Money": "Moneda principal para comprar objetos.",
+      "Fragments": "Moneda especial para despertar frutas y más.",
+      "Stats": "Sistema de estadísticas para mejorar tu personaje.",
+      "Belts": "Cinturones que otorgan mejoras.",
+      "Map": "Mapa completo del mundo de Blox Fruits."
+    };
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.trim();
+      if (query === "") {
+        searchResults.textContent = "Escribe algo para buscar información...";
+        return;
+      }
+
+      const result = Object.entries(data).find(([key]) =>
+        key.toLowerCase().includes(query.toLowerCase())
+      );
+
+      if (result) {
+        searchResults.textContent = `${result[0]}: ${result[1]}`;
+      } else {
+        searchResults.textContent = "❌ No se encontró ningún resultado.";
+      }
+    });
+  </script>
+</body>
+</html>

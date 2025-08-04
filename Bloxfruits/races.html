@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Races</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .races-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .wiki-label {
+      font-size: 1rem;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+    }
+
+    .races-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .races-section p.subtitle {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .race-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .race-card {
+      border: 2px solid #0077cc;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      background-color: transparent;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .race-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #0077cc;
+    }
+
+    .race-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .race-name {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <img src="../files/bloxlogo.png" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+      <a href="fruits.html">🍍 Fruits</a>
+      <a href="codes.html">🎁 Codes</a>
+      <a href="update.html">🛠️ Update</a>
+      <a href="races.html">🧬 Races</a>
+      <a href="fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+
+  <div class="races-section">
+    <div class="wiki-label">bloxfruits wiki</div>
+    <h1>Races</h1>
+    <p class="subtitle">Races are a core mechanic in the game. Depending on the player's race, they will gain unique passives and buffs.</p>
+
+<!-- Dentro del contenedor .race-grid -->
+<div class="race-grid">
+  <a href="Races/angel.html" class="race-card">
+    <img src="../Bloximagenes/Angel.png" alt="Angel">
+    <div class="race-name">Angel</div>
+  </a>
+
+  <a href="Races/human.html" class="race-card">
+    <img src="../Bloximagenes/Human.png" alt="Human">
+    <div class="race-name">Human</div>
+  </a>
+
+  <a href="Races/rabbit.html" class="race-card">
+    <img src="../Bloximagenes/Rabbit.png" alt="Rabbit">
+    <div class="race-name">Rabbit</div>
+  </a>
+
+  <a href="Races/shark.html" class="race-card">
+    <img src="../Bloximagenes/Shark.png" alt="Shark">
+    <div class="race-name">Shark</div>
+  </a>
+
+  <a href="Races/ghoul.html" class="race-card">
+    <img src="../Bloximagenes/Ghoul.png" alt="Ghoul">
+    <div class="race-name">Ghoul</div>
+  </a>
+
+  <a href="Races/cyborg.html" class="race-card">
+    <img src="../Bloximagenes/Cyborg.png" alt="Cyborg">
+    <div class="race-name">Cyborg</div>
+  </a>
+
+  <a href="Races/draco.html" class="race-card">
+    <img src="../Bloximagenes/Draco.png" alt="Draco">
+    <div class="race-name">Draco</div>
+  </a>
+</div>
+
+</body>
+</html>

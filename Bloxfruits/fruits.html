@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>All Fruits In The Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .fruits-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .fruits-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .fruits-section p.subtitle {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+
+    .rarity-title {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+    }
+
+    .fruit-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .fruit-card {
+      border: 2px solid #0077cc;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    .fruit-card img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .fruit-name {
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .fruit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .fruit-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <img src="../files/bloxlogo.png" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+      <a href="fruits.html">🍍 Fruits</a>
+      <a href="codes.html">🎁 Codes</a>
+      <a href="update.html">🛠️ Update</a>
+      <a href="races.html">🧬 Races</a>
+      <a href="fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+
+  <div class="fruits-section">
+    <h1>All Fruits In The Game</h1>
+    <p class="subtitle">Explora las frutas que definen tu estilo de combate, desde las más básicas hasta las más poderosas.</p>
+
+    <!-- Common -->
+    <div class="rarity-title">Common</div>
+    <div class="fruit-grid">
+      <div class="fruit-card"><img src="../Bloximagenes/SpinFruit-300x300.webp" alt=""><div class="fruit-name">Spin</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/BladeFruit-300x300.webp" alt=""><div class="fruit-name">Chop</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/SpringFruit-300x300.webp" alt=""><div class="fruit-name">Spring</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/BombFruit-300x300.webp" alt=""><div class="fruit-name">Bomb</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/SpikeFruit-300x300.webp" alt=""><div class="fruit-name">Spike</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/RocketFruit-300x300.webp" alt=""><div class="fruit-name">Rocket</div></div>
+            <div class="fruit-card"><img src="../Bloximagenes/SmokeFruit-300x300.webp" alt=""><div class="fruit-name">Smoke</div></div>
+    </div>
+
+    <!-- Uncommon -->
+    <div class="rarity-title">Uncommon</div>
+    <div class="fruit-grid">
+      <div class="fruit-card"><img src="../Bloximagenes/FalconFruit-300x300.webp" alt=""><div class="fruit-name">Hawk</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/FlameFruit-300x300.webp" alt=""><div class="fruit-name">Flame</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/IceFruit-300x300.webp" alt=""><div class="fruit-name">Ice</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/SandFruit-300x300.webp" alt=""><div class="fruit-name">Sand</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/DarkFruit-300x300.webp" alt=""><div class="fruit-name">Dark</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/DiamondFruit-300x300.webp" alt=""><div class="fruit-name">Diamond</div></div>
+    </div>
+
+    <!-- Rare -->
+    <div class="rarity-title">Rare</div>
+    <div class="fruit-grid">
+      <div class="fruit-card"><img src="../Bloximagenes/GhostFruit-300x300.webp" alt=""><div class="fruit-name">Ghost</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/RubberFruit-300x300.webp" alt=""><div class="fruit-name">Rubber</div></div>
+            <div class="fruit-card"><img src="../Bloximagenes/LightFruit-300x300.webp" alt=""><div class="fruit-name">Light</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/BarrierFruit-300x300.webp" alt=""><div class="fruit-name">Barrier</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/MagmaFruit-300x300.webp" alt=""><div class="fruit-name">Magma</div></div>
+    </div>
+
+    <!-- Legendary -->
+    <div class="rarity-title">Legendary</div>
+    <div class="fruit-grid">
+      <div class="fruit-card"><img src="../Bloximagenes/SpiderFruit-300x300.webp" alt=""><div class="fruit-name">Spider</div></div>
+            <div class="fruit-card"><img src="../Bloximagenes/PortalFruit-300x300.webp" alt=""><div class="fruit-name">Portal</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/QuakeFruit-300x300.webp" alt=""><div class="fruit-name">Quake</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/BuddhaFruit-300x300.webp" alt=""><div class="fruit-name">Buddha</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/LoveFruit-300x300.webp" alt=""><div class="fruit-name">Love</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/SoundFruit-300x300.webp" alt=""><div class="fruit-name">Sound</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/PhoenixFruit-300x300.webp" alt=""><div class="fruit-name">Phoenix</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/BlizzardFruit-300x300.webp" alt=""><div class="fruit-name">Blizzard</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/PainFruit-300x300.webp" alt=""><div class="fruit-name">Paw</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/RumbleFruit-300x300.webp" alt=""><div class="fruit-name">Rumble</div></div>
+    </div>
+
+    <!-- Mythical -->
+    <div class="rarity-title">Mythical</div>
+    <div class="fruit-grid">
+      <div class="fruit-card"><img src="../Bloximagenes/ControlFruit-300x300.webp" alt=""><div class="fruit-name">Control</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/SpiritFruit-300x300.webp" alt=""><div class="fruit-name">Spirit</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/Dragon_WestFruit.webp" alt=""><div class="fruit-name">Dragon</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/LeopardFruit-300x300.webp" alt=""><div class="fruit-name">Leopard</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/T-Rex_Fruit.png" alt=""><div class="fruit-name">T-Rex</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/MammothFruit-300x300.webp" alt=""><div class="fruit-name">Mammoth</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/VenomFruit-300x300.webp" alt=""><div class="fruit-name">Venom</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/GravityFruit.webp" alt=""><div class="fruit-name">Gravity</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/Dough-Fruit-Blox-Fruits.png" alt=""><div class="fruit-name">Dough</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/ShadowFruit-300x300.webp" alt=""><div class="fruit-name">Shadow</div></div>
+      <div class="fruit-card"><img src="../Bloximagenes/KitsuneFruit-300x300.webp" alt=""><div class="fruit-name">Kitsune</div></div>
+    </div>
+  </div>
+
+</body>
+</html>
