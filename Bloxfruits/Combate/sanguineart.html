@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanguine Art Blox Fruits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .main-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .main-section h1 {
+      font-size: 2.5rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .main-section p.subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .info-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-image img {
+      width: 350px;
+      border-radius: 12px;
+    }
+
+    .info-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 300px;
+    }
+
+    .info-card {
+      background-color: #111;
+      border: 2px solid #0077cc;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .info-card strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #00ccff;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-card span {
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .info-block {
+        flex-direction: column;
+      }
+
+      .info-image img {
+        width: 100%;
+      }
+
+      .info-cards {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <img src="../files/bloxlogo" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+      <a href="fruits.html">🍍 Fruits</a>
+      <a href="codes.html">🎁 Codes</a>
+      <a href="update.html">🛠️ Update</a>
+      <a href="races.html">🧬 Races</a>
+      <a href="fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+
+  <div class="main-section">
+    <h1>Sanguine Art Blox Fruits</h1>
+    <p class="subtitle">
+      Dark Step is one of the earliest fighting styles in Blox Fruits, focused entirely on leg-based combat. It’s cheap, effective for early-game grinding, and a direct stepping stone to the powerful Death Step. With strong area attacks and solid stun potential, it’s a great choice for new players exploring melee combat.
+    </p>
+
+    <div class="info-block">
+      <div class="info-image">
+        <img src="../files/Sanguine_Art-Blox-Fruits" alt="Sanguine Art">
+      </div>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <strong>Type</strong>
+          <span>Fighting Style</span>
+        </div>
+
+        <div class="info-card">
+          <strong>Price</strong>
+          <span>150,000$</span>
+        </div>
+
+        <div class="info-card">
+          <strong>Location</strong>
+          <span>Pirate Village / Hot and Cold / Castle on the Sea</span>
+        </div>
+
+        <div class="info-card">
+          <strong>Upgradable</strong>
+          <span>Yes (Death Step)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
