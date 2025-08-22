@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Superhuman Blox Fruits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .main-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .main-section h1 {
+      font-size: 2.5rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .main-section p.subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .info-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-image img {
+      width: 350px;
+      border-radius: 12px;
+    }
+
+    .info-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 300px;
+    }
+
+    .info-card {
+      background-color: #111;
+      border: 2px solid #0077cc;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .info-card strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #00ccff;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-card span {
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    .ability-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .ability-card {
+      background-color: #003366;
+      padding: 1.5rem;
+      border-radius: 12px;
+      color: #fff;
+    }
+
+    .ability-card h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .ability-meta {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .ability-meta div {
+      background-color: #005599;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .comparison-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .comparison-box {
+      flex: 1;
+      min-width: 300px;
+      background-color: #111;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .comparison-box h2 {
+      font-size: 2rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .comparison-box ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .combos-box {
+      margin-top: 2rem;
+      background-color: #262626;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .combos-box h2 {
+      font-size: 2rem;
+      color: #00ccff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .combos-box ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .info-block {
+        flex-direction: column;
+      }
+
+      .info-image img {
+        width: 100%;
+      }
+
+      .info-cards {
+        width: 100%;
+        max-width: none;
+      }
+
+      .comparison-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <img src="/files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+     <a href="/Bloxfruits/fruits.html">🍍 Fruits</a>
+      <a href="/Bloxfruits/codes.html">🎁 Codes</a>
+      <a href="/Bloxfruits/update.html">🛠️ Update</a>
+      <a href="/Bloxfruits/races.html">🧬 Races</a>
+      <a href="/Bloxfruits/fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+
+  <!-- ABREVIADO: cabezal, estilos y parte superior se mantiene igual -->
+
+<!-- ... sigue todo igual hasta aquí ... -->
+
+  <div class="main-section">
+    <h1>Superhuman Blox Fruits</h1>
+    <p class="subtitle">
+      Superhuman is a powerful advanced fighting style in Blox Fruits, known for its fast combos, mobility, and ability to break Instinct. It's one of the most sought-after styles in the game, especially for PvP and boss fights.
+    </p>
+
+    <div class="info-block">
+      <div class="info-image">
+        <img src="/files/Superhuman_Min.png" alt="Superhuman Art">
+      </div>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <strong>Tipo</strong>
+          <span>Estilo Avanzado</span>
+        </div>
+        <div class="info-card">
+          <strong>Precio</strong>
+          <span>$3,000,000</span>
+        </div>
+        <div class="info-card">
+          <strong>Requisito</strong>
+          <span>300 maestría en 4 estilos</span>
+        </div>
+        <div class="info-card">
+          <strong>NPC</strong>
+          <span>Maestro de Artes Marciales (Segundo Mar)</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="font-size: 2rem; color: #ff4d4d; margin-top: 3rem;">Superhuman Abilities</h2>
+
+    <div class="ability-grid">
+      <!-- Ability 1 -->
+      <div class="ability-card">
+        <h3>Beast Owl Pounce (Z)</h3>
+        <div class="ability-meta">
+          <div><strong>Mastery</strong><br><span>110</span></div>
+          <div><strong>Key</strong><br><span>Z</span></div>
+        </div>
+        <p>Dash forward and slam the enemy with a powerful punch. Good for initiating combos and closing distance.</p>
+        <img src="/files/superz.gif" alt="Z Ability" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+      </div>
+
+      <!-- Ability 2 -->
+      <div class="ability-card">
+        <h3>Thunder Clap (X)</h3>
+        <div class="ability-meta">
+          <div><strong>Mastery</strong><br><span>220</span></div>
+          <div><strong>Key</strong><br><span>X</span></div>
+        </div>
+        <p>Strike the ground with electricity, stunning nearby enemies. Great for interrupting and controlling space.</p>
+        <img src="/files/superx.gif" alt="X Ability" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+      </div>
+
+      <!-- Ability 3 -->
+      <div class="ability-card">
+        <h3>Conqueror’s Gun (C)</h3>
+        <div class="ability-meta">
+          <div><strong>Mastery</strong><br><span>330</span></div>
+          <div><strong>Key</strong><br><span>C</span></div>
+        </div>
+        <p>Launch a devastating energy blast that pierces through enemies. High damage and long range, ideal for finishing combos.</p>
+        <img src="/files/superc.gif" alt="C Ability" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+      </div>
+    </div> <!-- Cierre de ability-grid -->
+
+    <!-- Evolution & Pros/Cons -->
+    <div class="comparison-section">
+      <div class="comparison-box">
+        <h2>Evolución y Uso</h2>
+        <p>Superhuman no evoluciona a otro estilo, pero es considerado uno de los más completos por su velocidad, daño y versatilidad. Ideal para jugadores que dominan el movimiento y los combos.</p>
+      </div>
+
+      <div class="comparison-box">
+        <h2>Pros y Contras</h2>
+        <ul>
+          <li><strong>✅ Pros:</strong></li>
+          <li>✔️ Todas las habilidades son rápidas y con buen daño</li>
+          <li>✔️ Rompe Instinct fácilmente</li>
+          <li>✔️ Excelente para PvP y bosses</li>
+          <li>✔️ Gran movilidad y alcance</li>
+          <li>✔️ No requiere transformación ni energía adicional</li>
+          <li><strong>❌ Contras:</strong></li>
+          <li>⚠️ Requiere mucha maestría para desbloquear</li>
+          <li>⚠️ No tiene habilidades elementales</li>
+          <li>⚠️ No evoluciona a un estilo superior</li>
+          <li>⚠️ Puede ser difícil de dominar para nuevos jugadores</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Combos recomendados -->
+    <div class="combos-box">
+      <h2>Combos Recomendados</h2>
+      <ul>
+        <li>Superhuman + Electric Claw: Teleport + stun + burst</li>
+        <li>Superhuman + Dragon Talon: Knockback + AoE + chase</li>
+        <li>Superhuman + Ice: Freeze + punch combo</li>
+        <li>Superhuman + Light: Speed + ranged finishers</li>
+      </ul>
+    </div>
+
+  </div> <!-- Cierre de main-section -->
+</body>
+</html>

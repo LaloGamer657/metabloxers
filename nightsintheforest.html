@@ -2,95 +2,300 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Brookhaven RP</title>
+  <title>99 Nights in the Forest WIKI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #eee;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #111;
+      color: #f0f0f0;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .play-bar {
+      margin-top: 80px;
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 0.8rem;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .play-bar a {
+      color: #00ccff;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2rem;
     }
 
     .main-section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: #1e1e1e;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
     }
 
-    .main-image {
+    .main-section h1 {
+      font-size: 2.5rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
       text-align: center;
-      margin-bottom: 1.5rem;
     }
 
-    .main-image img {
-      max-width: 100%;
-      border-radius: 8px;
+    .main-section p.description {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      text-align: center;
     }
 
-    .play-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background-color: #0077cc;
+    .main-section h2 {
+      font-size: 2rem;
+      color: #00ccff;
+      margin-bottom: 1rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 3rem;
+    }
+
+    .nav-card {
+      background-color: #003366;
+      padding: 1rem;
+      border-radius: 12px;
       color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s;
+      text-align: center;
     }
 
-    .play-button:hover {
-      background-color: #005fa3;
+    .nav-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .nav-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 0.5rem;
     }
 
     .info-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
+      margin-top: 2rem;
+      background-color: #111;
+      border: 2px solid #0077cc;
+      border-radius: 12px;
+      overflow: hidden;
     }
 
-    .info-table th,
-    .info-table td {
-      border: 1px solid #444;
-      padding: 0.6rem;
+    .info-table th, .info-table td {
+      padding: 1rem;
       text-align: left;
+      border-bottom: 1px solid #333;
     }
 
     .info-table th {
-      background-color: #333;
-      color: #fff;
+      background-color: #222;
+      color: #00ccff;
     }
 
     .info-table td {
-      background-color: #222;
       color: #ccc;
+    }
+
+    .overview-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .overview-left, .overview-right {
+      flex: 1 1 300px;
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .overview-left h3, .overview-right h3 {
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .overview-right img {
+      display: block;
+      margin: 0 auto 1rem;
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .overview-left ul, .overview-right ul {
+      padding-left: 1.2rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="/files/logoforest.png" alt="Logo" class="logo">
+    <div class="nav-links">
+      <a href="/Navegation-forest/classes.html">Classes</a>
+      <a href="/Navegation-forest/badges.html">Badges</a>
+      <a href="/Navegation-forest/locations.html">Location</a>
+      <a href="/Navegation-forest/items.html">Items</a>
+      <a href="/Navegation-forest/enemies.html">Enemies</a>
+      <a href="/Navegation-forest/crafting.html">Crafting</a>
+      <a href="/Navegation-forest/updates.html">Updates</a>
+      <a href="/Navegation-forest/codes.html">Codes</a>
+    </div>
+  </div>
 
-  <!-- prueba -->
+  <!-- Play button -->
+  <div class="play-bar">
+    <a href="https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest" target="_blank">▶️ Play 99 Nights in the Forest</a>
+  </div>
 
-    <!-- Imagen principal + tabla + botón -->
-    <div class="main-section">
-      <div class="main-image">
-        <img src="files/nightsforestimage.png" alt="99 nights in the forest Banner">
-        <a href="https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest-SNOW-BIOME" target="_blank" class="play-button">Play 99 Nights in the Forest Now</a>
+  <!-- Main -->
+  <div class="main-section">
+    <h1>99 Nights in the Forest WIKI</h1>
+    <p class="description">
+      99 Nights in the Forest is a survival horror experience set deep in a mysterious woodland. Players must endure nightly threats, gather resources, and uncover the secrets hidden within the forest. With dynamic enemies, crafting systems, and evolving lore, each night brings new challenges. Whether solo or with friends, survival depends on strategy and courage.
+    </p>
+
+    
+    <!-- Game Overview like the image -->
+    <div class="overview-section">
+      <div class="overview-left">
+        <h3>🔶 Core Survival Mechanics</h3>
+        <p>Players must survive 99 nights in a terrifying forest while searching for four missing children. The game uses a dynamic difficulty system where monster attack frequency and strength increase as nights progress.</p>
+        <ul>
+          <li><strong>🌞 Daytime Activities:</strong> Collect resources, build defenses, explore the map</li>
+          <li><strong>🌚 Nighttime Survival:</strong> Protect the campfire, avoid monsters, maintain light sources</li>
+        </ul>
+        <h3>📜 Inspiration from Real Events</h3>
+        <p>The game is inspired by a real-life 2023 plane crash in Colombia where four children survived 40 days in the Amazon rainforest. Developers combined this event with supernatural horror elements.</p>
       </div>
-
-      <table class="info-table">
-        <tr><th>Features</th><th>Details</th></tr>
-        <tr><td>Active Users</td><td>1,861,357M</td></tr>
-        <tr><td>Version</td><td>#7</td></tr>
-        <tr><td>Category</td><td>Survival</td></tr>
-        <tr><td>Visits</td><td>+20B</td></tr>
-      </table>
+      <div class="overview-right">
+        <h3>☠️ Primary Threat: Wendigo</h3>
+        <img src="/files/fullgameimagen.png" alt="Wendigo">
+        <ul>
+          <li>👹 A supernatural creature from folklore – deer head, human body</li>
+          <li>💡 Light-averse – can be driven away with campfires and torches</li>
+          <li>🔊 Active at night – makes unique sounds when approaching</li>
+          <li>🌲 Forest hostility increases with each child rescued</li>
+        </ul>
+      </div>
     </div>
 
-<!-- prueba -->
+<h2 style="margin-top: 4rem;">Explore Sections</h2>
+<div class="card-grid">
+  <a href="/Navegation-forest/guide.html" class="nav-card">
+    <h3>📜 Guide</h3>
+    <img src="/files/Lore.png" alt="Guide Image">
+  </a>
+  <a href="/Navegation-forest/locations.html" class="nav-card">
+    <h3>🗺️ Locations</h3>
+    <img src="/files/Locations-150x150.png" alt="Locations Image">
+  </a>
+  <a href="/Navegation-forest/items.html" class="nav-card">
+    <h3>🧰 Items</h3>
+    <img src="/files/Items-150x150.png" alt="Items Image">
+  </a>
+  <a href="/Navegation-forest/enemies.html" class="nav-card">
+    <h3>👾 Enemies</h3>
+    <img src="/files/Enemies.png" alt="Enemies Image">
+  </a>
+  <a href="/Navegation-forest/updates.html" class="nav-card">
+    <h3>🛠️ Updates</h3>
+    <img src="/files/Updates.png" alt="Updates Image">
+  </a>
+  <a href="/Navegation-forest/crafting.html" class="nav-card">
+    <h3>⚒️ Crafting</h3>
+    <img src="/files/Crafting.png" alt="Crafting Image">
+  </a>
+  <a href="/Navegation-forest/badges.html" class="nav-card">
+    <h3>🎖️ Badges</h3>
+    <img src="/files/Badges.png" alt="Badges Image">
+  </a>
+  <a href="/Navegation-forest/classes.html" class="nav-card">
+    <h3>🧙‍♂️ Classes</h3>
+    <img src="/files/Classes.png" alt="Classes Image">
+  </a>
+  <a href="/Navegation-forest/codes.html" class="nav-card">
+    <h3>💬 Codes</h3>
+    <img src="/files/Codes.png" alt="Codes Image">
+  </a>
+  <a href="/Navegation-forest/events.html" class="nav-card">
+    <h3>🎉 Events</h3>
+    <img src="/files/Events.png" alt="Events Image">
+  </a>
+</div>
 
+
+    <!-- Game info table -->
+    <h2>Game Information</h2>
+    <table class="info-table">
+      <tr><th>Developer</th><td>Grandma’s Favourite Games</td></tr>
+      <tr><th>Platform</th><td>Roblox</td></tr>
+      <tr><th>Genre</th><td>Survival, Horror</td></tr>
+      <tr><th>Created</th><td>March 4, 2025</td></tr>
+      <tr><th>Last Updated</th><td>June 23, 2025</td></tr>
+      <tr><th>Engine</th><td>Roblox Engine</td></tr>
+      <tr><th>Price</th><td>Free-to-play (with optional Game Passes)</td></tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 99 Nights In The Forest Wiki
+  </footer>
 </body>
 </html>

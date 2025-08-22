@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Superhuman Blox Fruits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .main-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .main-section h1 {
+      font-size: 2.5rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .main-section p.subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .info-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-image img {
+      width: 350px;
+      border-radius: 12px;
+    }
+
+    .info-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 300px;
+    }
+
+    .info-card {
+      background-color: #111;
+      border: 2px solid #0077cc;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .info-card strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #00ccff;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-card span {
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    .ability-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .ability-card {
+      background-color: #003366;
+      padding: 1.5rem;
+      border-radius: 12px;
+      color: #fff;
+    }
+
+    .ability-card h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .ability-meta {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .ability-meta div {
+      background-color: #005599;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .comparison-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .comparison-box {
+      flex: 1;
+      min-width: 300px;
+      background-color: #111;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .comparison-box h2 {
+      font-size: 2rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .comparison-box ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .combos-box {
+      margin-top: 2rem;
+      background-color: #262626;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .combos-box h2 {
+      font-size: 2rem;
+      color: #00ccff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .combos-box ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .info-block {
+        flex-direction: column;
+      }
+
+      .info-image img {
+        width: 100%;
+      }
+
+      .info-cards {
+        width: 100%;
+        max-width: none;
+      }
+
+      .comparison-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="blox-navbar">
+    <img src="/files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+     <a href="/Bloxfruits/fruits.html">🍍 Fruits</a>
+      <a href="/Bloxfruits/codes.html">🎁 Codes</a>
+      <a href="/Bloxfruits/update.html">🛠️ Update</a>
+      <a href="/Bloxfruits/races.html">🧬 Races</a>
+      <a href="/Bloxfruits/fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+  <div class="main-section">
+    <h1>Electric Claw Blox Fruits</h1>
+<p class="subtitle">
+  Electric Claw is one of the most dynamic and fast-paced fighting styles in Blox Fruits. Known for its speed, combo potential, and strong visuals, it excels in both PvP and fast dashing tactics.
+</p>
+
+<div class="info-block">
+  <div class="info-image">
+    <img src="/files/Electric_Claw_Min.png" alt="Electric Claw">
+  </div>
+
+  <div class="info-cards">
+    <div class="info-card">
+      <strong>Tipo</strong>
+      <span>Fighting Style</span>
+    </div>
+    <div class="info-card">
+      <strong>Precio</strong>
+      <span>$3,000,000 + 5,000 Bones</span>
+    </div>
+    <div class="info-card">
+      <strong>Requisito</strong>
+      <span>400 Maestría en Electric</span>
+    </div>
+    <div class="info-card">
+      <strong>Ubicación</strong>
+      <span>Third Sea</span>
+    </div>
+  </div>
+</div>
+
+<h2 style="font-size: 2rem; color: #ff4d4d; margin-top: 3rem;">Electric Claw Abilities</h2>
+
+<div class="ability-grid">
+  <!-- Z -->
+  <div class="ability-card">
+    <h3>Electric Frenzy (Z)</h3>
+    <div class="ability-meta">
+      <div><strong>Mastery</strong><br><span>110</span></div>
+      <div><strong>Key</strong><br><span>Z</span></div>
+    </div>
+    <p>Slashes the enemy rapidly with electric claws (can be held to extend duration), then dashes forward dealing electric damage. Stuns NPCs and bosses.</p>
+    <img src="/files/electricz.gif" alt="Electric Frenzy" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+  </div>
+
+  <!-- X -->
+  <div class="ability-card">
+    <h3>Electric Lunge (X)</h3>
+    <div class="ability-meta">
+      <div><strong>Mastery</strong><br><span>220</span></div>
+      <div><strong>Key</strong><br><span>X</span></div>
+    </div>
+    <p>Charges forward like a spear. If you hit an enemy, it impales and explodes with electricity. Holding the key increases dash distance significantly.</p>
+    <img src="/files/electricx.gif" alt="Electric Lunge" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+  </div>
+
+  <!-- C -->
+  <div class="ability-card">
+    <h3>Thunder Clap and Flash (C)</h3>
+    <div class="ability-meta">
+      <div><strong>Mastery</strong><br><span>330</span></div>
+      <div><strong>Key</strong><br><span>C</span></div>
+    </div>
+    <p>Dashes to target, unleashing multiple electric hits and slamming them into the ground. Great for air combos and chasing opponents.</p>
+    <img src="/files/electricc.gif" alt="Thunder Clap and Flash" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+  </div>
+</div>
+
+<!-- Pros y contras -->
+<div class="comparison-section">
+  <div class="comparison-box">
+    <h2>Ventajas y Desventajas</h2>
+    <ul>
+      <li><strong>✅ Pros:</strong></li>
+      <li>✔️ Todas las habilidades (incluido M1) tienen movilidad de dash</li>
+      <li>✔️ Alto daño por clic</li>
+      <li>✔️ Cooldowns bajos</li>
+      <li>✔️ Perfecto para combos y PvP</li>
+      <li>✔️ El movimiento C tiene auto-apuntado como Venom X</li>
+      <li>✔️ El X sirve para escapar o viajar rápido</li>
+      <li>✔️ Funciona bien con Buddha + autoclicker</li>
+      <li>✔️ El Z aturde a jefes y NPCs</li>
+      <li>✔️ Excelente para ataques aéreos</li>
+      <li><strong>❌ Contras:</strong></li>
+      <li>⚠️ Caro y difícil de desbloquear</li>
+      <li>⚠️ Alta maestría requerida (110 / 220 / 330)</li>
+      <li>⚠️ El Z es difícil de acertar en PvP</li>
+      <li>⚠️ No es ideal para farmeo pasivo</li>
+      <li>⚠️ El movimiento C puede hacerte caer bajo islas con lag</li>
+      <li>⚠️ Riesgoso cerca del agua (a menos que seas Shark)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Guía -->
+<div class="combos-box">
+  <h2>Guía del estilo Electric Claw</h2>
+  <p>
+    Electric Claw es un estilo de alta velocidad, ideal para jugadores que priorizan combos agresivos y movimientos rápidos. El M1 tiene dash incorporado y es perfecto con autoclicker.
+  </p>
+  <p>
+    El X es ideal para viajes o escape, y puede combinarse con habilidades como Flash Step o Spikey Trident para combos mortales. Si te gusta la precisión y velocidad, Electric Claw es uno de los mejores estilos en el juego.
+  </p>
+</div>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Raza Human</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .header-bar {
+      background-color: #222;
+      color: red;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .gif-section {
+      text-align: center;
+    }
+
+    .gif-section img {
+      width: 200px;
+      border-radius: 12px;
+    }
+
+    .gif-section h2 {
+      color: red;
+      text-decoration: underline;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .info-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      background-color: #111;
+      border: 2px solid #0077cc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .info-table th, .info-table td {
+      border: 1px solid #0077cc;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .info-table th {
+      background-color: #222;
+      color: #00ccff;
+      font-weight: bold;
+    }
+
+    .info-table td {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="header-bar">
+    Raza Human
+  </div>
+
+  <div class="content">
+    <div class="gif-section">
+      <img src="https://i.gifer.com/3OyPY.gif" alt="Human Gif">
+      <h2>Humano</h2>
+    </div>
+
+    <table class="info-table">
+      <tr>
+        <th>Habilidad</th>
+        <th>Adquirir</th>
+        <th>NPC</th>
+        <th>Requisitos</th>
+        <th>Robux</th>
+      </tr>
+      <tr>
+        <td>Cuanta menos vida tenga el usuario más daño infringe</td>
+        <td>Tienes un 62,5% de que consigas esta raza al crear tu personaje por primera vez</td>
+        <td>Habla con Tort para conseguir esta raza por 3000 fragmentos</td>
+        <td>No</td>
+        <td>90</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanguine Art Blox Fruits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .main-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .main-section h1 {
+      font-size: 2.5rem;
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .main-section p.subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .info-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-image img {
+      width: 350px;
+      border-radius: 12px;
+    }
+
+    .info-cards {
+      display: grid;
+   grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 300px;
+    }
+
+    .info-card {
+      background-color: #111;
+      border: 2px solid #0077cc;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .info-card strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #00ccff;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-card span {
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .info-block {
+        flex-direction: column;
+      }
+
+      .info-image img {
+        width: 100%;
+      }
+
+      .info-cards {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <img src="/files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+      <a href="fruits.html">🍍 Fruits</a>
+      <a href="codes.html">🎁 Codes</a>
+      <a href="update.html">🛠️ Update</a>
+      <a href="races.html">🧬 Races</a>
+      <a href="fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+
+  <div class="main-section">
+    <h1>Sanguine Art Blox Fruits</h1>
+    <p class="subtitle">
+      Dark Step is one of the earliest fighting styles in Blox Fruits, focused entirely on leg-based combat. It’s cheap, effective for early-game grinding, and a direct stepping stone to the powerful Death Step. With strong area attacks and solid stun potential, it’s a great choice for new players exploring melee combat.
+    </p>
+
+    <div class="info-block">
+      <div class="info-image">
+        <img src="/files/Dark_Step_Min.png" alt="Sanguine Art">
+      </div>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <strong>Type</strong>
+          <span>Fighting Style</span>
+        </div>
+
+        <div class="info-card">
+          <strong>Price</strong>
+          <span>150,000$</span>
+        </div>
+
+        <div class="info-card">
+          <strong>Location</strong>
+          <span>Pirate Village / Hot and Cold / Castle on the Sea</span>
+        </div>
+
+        <div class="info-card">
+          <strong>Upgradable</strong>
+          <span>Yes (Death Step)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Texto explicativo al estilo original -->
+    <p class="subtitle" style="margin-top: 3rem;">
+      You can purchase Dark Step from the Dark Step Teacher for only $150,000. He can be found at:
+    </p>
+    <ul style="color: #ccc; padding-left: 1.5rem; margin-bottom: 2rem;">
+      <li>Pirate Village (First Sea)</li>
+      <li>Hot and Cold (Second Sea – lava side)</li>
+      <li>Castle on the Sea (Third Sea)</li>
+    </ul>
+
+    <h2 style="font-size: 2rem; color: #ff4d4d; margin-bottom: 1.5rem;">Dark Step Abilities</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+  <!-- Cuadro 1: Flying Kick -->
+  <div style="background-color: #003366; padding: 1.5rem; border-radius: 12px; color: #fff;">
+    <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 1rem;">Flying Kick (Z)</h3>
+    <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+      <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+        <strong>Mastery</strong><br><span>1</span>
+      </div>
+      <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+        <strong>Key</strong><br><span>Z</span>
+      </div>
+    </div>
+    <p>Dash forward in a red arc and land a strong impact. The red aiming trail can be misleading at longer distances.</p>
+    <img src="/files/darkstep1.gif" alt="Flying Kick GIF" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+  </div>
+
+  <!-- Cuadro 2: Breakdance -->
+  <div style="background-color: #003366; padding: 1.5rem; border-radius: 12px; color: #fff;">
+    <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 1rem;">Breakdance (X)</h3>
+    <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+      <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+        <strong>Mastery</strong><br><span>40</span>
+      </div>
+      <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+        <strong>Key</strong><br><span>X</span>
+      </div>
+    </div>
+    <p>Perform a spinning kick handstand, dealing AoE damage and stunning nearby enemies. You can’t move while spinning.</p>
+    <img src="/files/breakdance.gif" alt="Breakdance GIF" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+  </div>
+
+<!-- Barrage (C) -->
+<div style="background-color: #003366; padding: 1.5rem; border-radius: 12px; color: #fff;">
+  <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 1rem;">Barrage (C)</h3>
+  <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+    <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+      <strong>Mastery</strong><br><span>80</span>
+    </div>
+    <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+      <strong>Key</strong><br><span>C</span>
+    </div>
+  </div>
+  <p>Unleash a barrage of kicks at your target. Holding the key increases the duration. Gets interrupted if you’re hit.</p>
+  <img src="/files/BarrageShowcase.gif" alt="Barrage GIF" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+</div>
+
+<!-- Overheat (V) -->
+<div style="background-color: #003366; padding: 1.5rem; border-radius: 12px; color: #fff;">
+  <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 1rem;">Overheat (V)</h3>
+  <div style="display: flex; gap: 1rem; margin: 1rem 0;">
+    <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+      <strong>Mastery</strong><br><span>150</span>
+    </div>
+    <div style="background-color: #005599; padding: 0.5rem 1rem; border-radius: 8px; text-align: center; flex: 1;">
+      <strong>Key</strong><br><span>V</span>
+    </div>
+  </div>
+  <p>Sets your legs on fire, boosting all Dark Step damage by 1.22x for 30 seconds. Can be leveled up by using it 100 times. Cooldown: 60s.</p>
+  <img src="/files/OverheatShowcase.gif" alt="Overheat GIF" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
+</div>
+
+<div class="container">
+  <!-- Dark Step Evolution & Use -->
+  <div class="box evolution">
+    <h2>Dark Step Evolution & Use</h2>
+    <p>Dark Step is the first fighting style in the game. It evolves into Death Step, which adds more damage and flashy effects. It's great for early grinding and PvP if used well.</p>
+  </div>
+
+  <!-- Pros & Cons -->
+  <div class="box pros-cons">
+    <h2>Pros & Cons</h2>
+    <ul>
+      <li><strong style="font-size: 1.2rem;">Pros:</strong></li>
+      <li><strong></strong> All abilities have AoE</li>
+      <li><strong></strong> Solid early-game for levels 50–200</li>
+      <li><strong></strong> Low mastery requirements</li>
+      <li><strong></strong> Can evolve into Death Step</li>
+      <li><strong></strong> Great combo potential</li>
+      <li><strong></strong> Effective for stunning enemies in First Sea PvP.</li>
+      <li><strong style="font-size: 1.2rem;">Cons:</strong></li>
+      <li><strong></strong> Low base damage overall</li>
+      <li><strong></strong> Barrage can be interrupted easily</li>
+      <li><strong></strong> Moves dont break Instinct</li>
+      <li><strong></strong> Overheat has long cooldown and animation</li>
+      <li><strong></strong> Weak against elemental enemies in late game.</li>
+    </ul>
+  </div>
+
+  <!-- Recommended Combos -->
+  <div class="box combos">
+    <h2>Recommended Combos</h2>
+    <ul>
+      <li>Dark Step + Ice: Freeze then barrage.</li>
+      <li>Dark Step + Light: Dash in and burst.</li>
+      <li>Dark Step + Flame: Knockback and burn.</li>
+    </ul>
+  </div>
+</div>
+
+</div> <!-- Cierre de main-section -->
+
+
+  </div> <!-- Cierre de main-section -->
+
+</body>
+</html>

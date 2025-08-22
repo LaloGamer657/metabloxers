@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blox Fruits Codes</title>
+  <!-- Fuente profesional -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .codes-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .codes-section h1 {
+      font-size: 2.5rem;
+    }
+
+    .codes-section p {
+      font-size: 1.2rem;
+    }
+
+    .update-date {
+      font-style: italic;
+      color: #888;
+      margin-bottom: 2rem;
+    }
+
+    .code-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+ .code-card {
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #0077cc;
+  height: 280px; /* más espacio vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.code-card img {
+  width: 36px; /* ligeramente más pequeño */
+  height: 36px;
+  margin-bottom: 1rem; /* más espacio debajo */
+  align-self: center; /* centrado horizontalmente */
+}
+
+
+    .code-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .active-indicator {
+      width: 10px;
+      height: 10px;
+      background-color: gold;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .code-status {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .reward-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .reward-text {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #ffffff;
+    }
+
+    .copy-button {
+      padding: 0.6rem 1rem;
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .copy-button:hover {
+      background-color: #005fa3;
+    }
+
+    @media (max-width: 900px) {
+      .code-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .code-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <img src="../files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+       <a href="/Bloxfruits/fruits.html">🍍 Fruits</a>
+      <a href="/Bloxfruits/codes.html">🎁 Codes</a>
+      <a href="/Bloxfruits/update.html">🛠️ Update</a>
+      <a href="/Bloxfruits/races.html">🧬 Races</a>
+      <a href="/Bloxfruits/fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+
+  <div class="codes-section">
+    <h1>Blox Fruits Codes 🎁</h1>
+    <p>Unlock epic rewards with our updated Blox Fruits codes! Redeem for 2x Experience, Stat Resets, and exclusive bonuses to enhance your adventure.</p>
+    <div class="update-date">Last updated August 2025!</div>
+
+ <div class="filter-buttons">
+      <button onclick="filterCodes('all')">Mostrar Todos</button>
+      <button onclick="filterCodes('xp')">XP Boost</button>
+      <button onclick="filterCodes('reset')">Stat Refund</button>
+    </div>
+
+    <div class="code-grid">
+<!-- XP Boost Codes -->
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">1LOSTADMIN <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('1LOSTADMIN')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">ADMINFIGHT <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('ADMINFIGHT')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">GIFTING_HOURS <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('GIFTING_HOURS')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2GAMERROBOT_EXP1 <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 30 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SUB2GAMERROBOT_EXP1')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">KITTGAMING <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('KITTGAMING')">Copy</button>
+</div>
+
+<!-- Stat Reset Codes -->
+<div class="code-card reset">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">ADMINHACKED <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 Stat Refund</div>
+  <button class="copy-button" onclick="copyCode('ADMINHACKED')">Copy</button>
+</div>
+
+<div class="code-card reset">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2UNCLEKIZARU <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 Stat Refund</div>
+  <button class="copy-button" onclick="copyCode('SUB2UNCLEKIZARU')">Copy</button>
+</div>
+
+<div class="code-card reset">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">KITT_RESET <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 Stat Refund</div>
+  <button class="copy-button" onclick="copyCode('KITT_RESET')">Copy</button>
+</div>
+
+<div class="code-card reset">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2GAMERROBOT_RESET1 <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 Stat Refund</div>
+  <button class="copy-button" onclick="copyCode('SUB2GAMERROBOT_RESET1')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">NOMOREHACK <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('NOMOREHACK')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">BANEXPLOIT <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('BANEXPLOIT')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">WildDares <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('WildDares')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">BossBuild <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('BossBuild')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">GetPranked <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('GetPranked')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">EARN_FRUITS <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('EARN_FRUITS')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">FIGHT4FRUIT <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('FIGHT4FRUIT')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">NOEXPLOITER <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('NOEXPLOITER')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">NOOB2ADMIN <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('NOOB2ADMIN')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">CODESLIDE <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('CODESLIDE')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">ADMINDARES <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('ADMINDARES')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2CAPTAINMAUI <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SUB2CAPTAINMAUI')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">DEVSCOOKING <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('DEVSCOOKING')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2FER999 <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SUB2FER999')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">ENYU_IS_PRO <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('ENYU_IS_PRO')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">MAGICBUS <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('MAGICBUS')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">JCWK <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('JCWK')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">STARCODEHEO <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('STARCODEHEO')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">BLUXXY <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('BLUXXY')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">THEGREATACE <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('THEGREATACE')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2OFFICIALNOOBIE <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SUB2OFFICIALNOOBIE')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">STRAWHATMAINE <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 15 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('STRAWHATMAINE')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2NOOBMASTER123 <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 15 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SUB2NOOBMASTER123')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SUB2DAIGROCK <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 15 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SUB2DAIGROCK')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">AXIORE <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('AXIORE')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">TANTAIGAMING <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 15 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('TANTAIGAMING')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">fruitconcepts <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('fruitconcepts')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">krazydares <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('krazydares')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">TRIPLEABUSE <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('TRIPLEABUSE')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SEATROLLING <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SEATROLLING')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">24NOADMIN <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('24NOADMIN')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">REWARDFUN <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('REWARDFUN')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">NEWTROLL <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('NEWTROLL')">Copy</button>
+</div>
+
+<div class="code-card xp">
+  <img src="../files/regalo.png" alt="Chest Icon">
+  <div class="code-name">SECRET_ADMIN <span class="active-indicator"></span></div>
+  <div class="code-status">Code • Active</div>
+  <div class="reward-label">Reward</div>
+  <div class="reward-text">🎁 20 minutes of 2x XP</div>
+  <button class="copy-button" onclick="copyCode('SECRET_ADMIN')">Copy</button>
+</div>
+
+
+  <script>
+    function copyCode(code) {
+      navigator.clipboard.writeText(code).then(() => {
+        alert(`Copied: ${code}`);
+      });
+    }
+
+function filterCodes(type) {
+      const cards = document.querySelectorAll('.code-card');
+      cards.forEach(card => {
+        if (type === 'all') {
+          card.style.display = 'flex';
+        } else if (card.classList.contains(type)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

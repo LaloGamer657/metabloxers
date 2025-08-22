@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fighting Styles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .races-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .wiki-label {
+      font-size: 1rem;
+      color: #aaa;
+      margin-bottom: 0.5rem;
+    }
+
+    .races-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .races-section p.subtitle {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .race-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .race-card {
+      border: 2px solid #0077cc;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      background-color: transparent;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .race-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #0077cc;
+    }
+
+    .race-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .race-name {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .tier-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 3rem 0 1rem;
+      color: #ff9900;
+    }
+
+    .tier-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .tier-image img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-icons a {
+      background-color: #5865F2;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      text-decoration: none;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+
+    .footer-icons a:hover {
+      background-color: #4752c4;
+    }
+
+    .footer-logo {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .footer-logo img {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+
+    .footer-text {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 0 2rem 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <img src="../files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
+    <div class="nav-links">
+  <a href="/Bloxfruits/fruits.html">🍍 Fruits</a>
+      <a href="/Bloxfruits/codes.html">🎁 Codes</a>
+      <a href="/Bloxfruits/update.html">🛠️ Update</a>
+      <a href="/Bloxfruits/races.html">🧬 Races</a>
+      <a href="/Bloxfruits/fstyles.html">🥋 F.Styles</a>
+    </div>
+  </div>
+
+  <div class="races-section">
+    <div class="wiki-label">Bloxfruits wiki</div>
+    <h1>Fighting Styles</h1>
+    <p class="subtitle">Los estilos de pelea son técnicas cuerpo a cuerpo que se usan para combatir, mejorar daño y movilidad en PvE y PvP</p>
+
+    <!-- Cards -->
+    <div class="race-grid">
+      <a href="Combate/darkstep.html" class="race-card">
+        <img src="../files/Dark_Step_Min.png" alt="Dark Step">
+        <div class="race-name">Dark Step</div>
+      </a>
+
+      <a href="Combate/electric.html" class="race-card">
+        <img src="../files/Electric_Min.png" alt="Electric">
+        <div class="race-name">Electric</div>
+      </a>
+
+      <a href="Combate/waterkungfu.html" class="race-card">
+        <img src="../files/Water_Kung_Fu_Min.png" alt="Water Kung Fu">
+        <div class="race-name">Water Kung Fu</div>
+      </a>
+
+      <a href="Combate/dragonbreath.html" class="race-card">
+        <img src="../files/Dragon_Breath_Min.png" alt="Dragon Breath">
+        <div class="race-name">Dragon Breath</div>
+      </a>
+
+      <a href="Combate/deathstep.html" class="race-card">
+        <img src="../files/Death_Step_Min.png" alt="Death Step">
+        <div class="race-name">Death Step</div>
+      </a>
+
+      <a href="Combate/sharkman.html" class="race-card">
+        <img src="../files/Sharkman_Karate_Min.png" alt="Sharkman Karate">
+        <div class="race-name">Sharkman Karate</div>
+      </a>
+
+      <a href="Combate/superhuman.html" class="race-card">
+        <img src="../files/Superhuman_Min.png" alt="Superhuman">
+        <div class="race-name">Superhuman</div>
+      </a>
+
+      <a href="Combate/electric-claw.html" class="race-card">
+        <img src="../files/Electric_Claw_Min.png" alt="Electric Claw">
+        <div class="race-name">Electric Claw</div>
+      </a>
+
+      <a href="Combate/dragontalon.html" class="race-card">
+        <img src="../files/Dragon_Talon_Icon_Min.png" alt="Dragon Talon">
+        <div class="race-name">Dragon Talon</div>
+      </a>
+
+      <a href="Combate/godhuman.html" class="race-card">
+        <img src="../files/Godhumanicon_Min.png" alt="GodHuman">
+        <div class="race-name">GodHuman</div>
+      </a>
+
+      <a href="Combate/sanguineart.html" class="race-card">
+        <img src="../files/Sanguineimagen.png" alt="Sanguine Art">
+        <div class="race-name">Sanguine Art</div>
+      </a>
+    </div>
+
+    <!-- Tier List -->
+    <h2 class="tier-title">Fighting Styles Tier List</h2>
+    <div class="tier-image">
+      <img src="https://itemlevelmedia.b-cdn.net/wp-content/uploads/2023/12/01091246/Blox-Fruits-Best-Fighting-Style-Tier-List-in-Update-20-2.jpg" alt="Tier List">
+    </div>
+
+ <!-- Discord Footer -->
+<div style="text-align: center; margin-top: 3rem;">
+  <a href="https://discord.gg/DxpyGxdeHG" target="_blank" style="display: inline-block; background-color: #5865F2; border-radius: 50px; padding: 10px 20px; text-decoration: none;">
+    <img src="../files/discordlogo.png" alt="Discord Icon" style="height: 24px; vertical-align: middle; margin-right: 8px;">
+    <span style="color: white; font-weight: bold; vertical-align: middle;">Join our Discord</span>
+  </a>
+</div>
+
+<!-- Logo + Descripción -->
+<div style="text-align: center; margin-top: 3rem;">
+  <img src="https://i.postimg.cc/zfNkXB37/bf-dsn-logo-no-bg-l-225asd3x.webp" alt="Blox Fruits Logo" style="max-width: 160px; margin-bottom: 1rem;">
+  <p style="font-size: 0.9rem; color: #bbb;">Blox Fruits, the ultimate Roblox adventure game where millions of players explore, battle, and master the power of fruits to rule the seas!</p>
+  <p style="font-size: 0.75rem; color: #444;">© 2025 Blox Fruits. All rights reserved. All trademarks referenced herein are the properties of their respective owners.</p>
+</div>
