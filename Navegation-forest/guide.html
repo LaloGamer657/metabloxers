@@ -15,26 +15,27 @@
       font-style: italic;
       background-color: #0d0d0d;
       color: #f0f0f0;
-      padding-top: 80px; /* Para que el contenido no se meta debajo de la navbar */
+        padding-top: 100px; /* ajusta según el alto real de tu navbar */
     }
 
-    /* Barra superior */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      background-color: #111;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 2px solid #0077cc;
-    }
+  .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #111;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #0077cc;
+}
+
 
     .navbar .logo {
       height: 40px;
+      display: block;
     }
 
     .nav-links a {
@@ -49,20 +50,24 @@
       color: #fff;
     }
 
-    /* Barra de jugar */
-    .play-bar {
-      background-color: #1a1a1a;
-      text-align: center;
-      padding: 0.8rem;
-      border-bottom: 2px solid #0077cc;
-    }
+   .play-bar {
+  margin-top: 0;
+  padding: 0.5rem;
+}
 
-    .play-bar a {
-      color: #00ccff;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
+.play-bar a {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.play-bar a:hover {
+  background-color: #00ccff;
+}
 
     /* Contenido principal */
     h1 {
@@ -118,29 +123,55 @@
     a.back-link:hover {
       color: #fff;
     }
+
+    .logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  height: 48px;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+
+
+.image-wrapper {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-  <div class="navbar">
-    <img src="/files/logoforest.png" alt="Logo" class="logo">
-    <div class="nav-links">
-      <a href="/Navegation-forest/classes.html">Classes</a>
-      <a href="/Navegation-forest/badges.html">Badges</a>
-      <a href="/Navegation-forest/locations.html">Location</a>
-      <a href="/Navegation-forest/items.html">Items</a>
-      <a href="/Navegation-forest/enemies.html">Enemies</a>
-      <a href="/Navegation-forest/crafting.html">Crafting</a>
-      <a href="/Navegation-forest/updates.html">Updates</a>
-      <a href="/Navegation-forest/codes.html">Codes</a>
-    </div>
+<div class="navbar">
+  <a href="/nightsintheforest.html">
+    <img src="/files/99nightsinicio.webp" alt="Logo" class="logo">
+  </a>
+
+  <div class="nav-links">
+    <a href="/Navegation-forest/classes.html">Classes</a>
+    <a href="/Navegation-forest/badges.html">Badges</a>
+    <a href="/Navegation-forest/locations.html">Location</a>
+    <a href="/Navegation-forest/items.html">Items</a>
+    <a href="/Navegation-forest/enemies.html">Enemies</a>
+    <a href="/Navegation-forest/crafting.html">Crafting</a>
+    <a href="/Navegation-forest/updates.html">Updates</a>
+    <a href="/Navegation-forest/codes.html">Codes</a>
   </div>
 
-  <!-- Play button -->
   <div class="play-bar">
-    <a href="https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest" target="_blank">▶️ Play 99 Nights in the Forest</a>
+    <a href="https://www.roblox.com/games/79546208627805/99-Nights-in-the-Forest" target="_blank">▶️ Play</a>
   </div>
+</div>
 
   <!-- Contenido -->
   <h1>📜 Guide - 99 Nights in the Forest</h1>
@@ -153,16 +184,19 @@
     <p>Sobrevive las 99 noches mientras buscas y rescatas a los 4 niños perdidos. Cada noche se vuelve más peligrosa, con enemigos más agresivos y frecuentes.</p>
   </div>
 
-  <div class="guide-section">
-    <h2>2️⃣ Mecánicas Clave</h2>
-    <ul>
-      <li>🔥 Mantén el fuego encendido para alejar criaturas.</li>
-      <li>🪓 Recolecta madera y recursos durante el día.</li>
-      <li>💡 La luz es tu mejor defensa contra el Wendigo.</li>
-      <li>🗺️ Explora el mapa para encontrar campamentos y zonas seguras.</li>
-    </ul>
+ <div class="guide-section">
+  <h2>2️⃣ Mecánicas Clave</h2>
+  <ul>
+    <li>🔥 Mantén el fuego encendido para alejar criaturas.</li>
+    <li>🪓 Recolecta madera y recursos durante el día.</li>
+    <li>💡 La luz es tu mejor defensa contra el Wendigo.</li>
+    <li>🗺️ Explora el mapa para encontrar campamentos y zonas seguras.</li>
+  </ul>
+  <div class="image-wrapper">
     <img src="/files/Lore.png" alt="Campfire Example">
   </div>
+</div>
+
 
   <div class="guide-section">
     <h2>3️⃣ Consejos de Supervivencia</h2>
