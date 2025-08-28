@@ -5,14 +5,83 @@
   <title>Blox Fruits - Metabloxers</title>
   <link rel="stylesheet" href="../style.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+  body {
+  margin: 0;
+  padding-top: 80px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+    .blox-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0; /* sin gap extra */
+  max-width: 100%;
+  padding: 0.5rem 0;
+  overflow-x: auto;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14.93px;
+  font-weight: bold;
+  min-width: auto;
+  text-align: center;
+  transition: color 0.3s;
+  margin-left: 1.19rem; /* igual que en el primero */
+}
+
+.nav-links a:first-child {
+  margin-left: 0;
+}
+
+
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .blox-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
     .aura-section {
       display: flex;
       justify-content: center;
       align-items: flex-start;
       gap: 40px;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       margin: 40px auto;
-      max-width: 1200px;
       overflow-x: auto;
     }
 
@@ -22,6 +91,7 @@
       align-items: center;
       text-decoration: none;
       transition: box-shadow 0.3s ease;
+      min-width: 300px;
     }
 
     .aura-card img {
@@ -123,6 +193,8 @@
       padding: 20px;
       border-radius: 10px;
       color: #eee;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .discord-section {
@@ -138,6 +210,8 @@
     .discord-section p {
       font-size: 18px;
       color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     @media (max-width: 900px) {
@@ -149,24 +223,46 @@
         grid-template-columns: 1fr;
       }
     }
-  </style>
-<!-- prueba -->
 
-<!-- prueba -->
+    @media (max-width: 600px) {
+      .nav-links a {
+        font-size: 14px;
+        margin: 0.3rem;
+      }
+
+      .info-section h2 {
+        font-size: 22px;
+      }
+
+      .info-section p,
+      .discord-section p,
+      .qa-item {
+        font-size: 16px;
+      }
+
+      .aura-label,
+      .grid-label {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="blox-container">
-    <!-- Barra superior -->
-    <div class="blox-navbar">
-      <img src="../files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
-      <div class="nav-links">
-   <a href="/Bloxfruits/fruits.html">🍍 Fruits</a>
-      <a href="/Bloxfruits/codes.html">🎁 Codes</a>
-      <a href="/Bloxfruits/update.html">🛠️ Update</a>
-      <a href="/Bloxfruits/races.html">🧬 Races</a>
-      <a href="/Bloxfruits/fstyles.html">🥋 F.Styles</a>
-      </div>
-    </div>
+  
+ <div class="blox-navbar">
+  <a href="/Bloxfruits/bloxfruits.html">
+    <img src="../files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
+  </a>
+  <div class="nav-links">
+    <a href="/Bloxfruits/fruits.html">🍍 Fruits</a>
+    <a href="/Bloxfruits/codes.html">🎁 Codes</a>
+    <a href="/Bloxfruits/update.html">🛠️ Update</a>
+    <a href="/Bloxfruits/races.html">🧬 Races</a>
+    <a href="/Bloxfruits/fstyles.html">🥋 F.Styles</a>
+  </div>
+</div>
+
 
     <!-- Título principal -->
     <h1 class="main-title">Blox Fruits</h1>
@@ -208,7 +304,7 @@
 
     <!-- Imágenes pequeñas en dos filas -->
     <div class="grid-section">
-      <a href="swords.html" class="grid-card">
+      <a href="Swords/swords.html" class="grid-card">
         <img src="https://i.postimg.cc/qRYrzD9p/Blox-Fruits-Wiki-SWORDS.webp" alt="Swords">
         <div class="grid-label">Swords</div>
       </a>

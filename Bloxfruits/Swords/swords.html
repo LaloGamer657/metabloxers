@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Swords bloxfruits</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+
+    .blox-navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #0077cc;
+      z-index: 1000;
+    }
+
+    .blox-navbar .logo {
+      height: 40px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .selector {
+      max-width: 1200px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    .selector button {
+      background-color: #222;
+      color: #fff;
+      border: 2px solid #0077cc;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .selector button:hover {
+      background-color: #0077cc;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .sword-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .sword-card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .sword-card:hover {
+      transform: scale(1.03);
+    }
+
+    .sword-card img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+      border: 4px solid;
+      border-radius: 8px;
+    }
+
+    /* Rareza por color */
+    .common { border-color: #848484; }      /* Azul */
+    .uncommon { border-color: #2c8fb2; }    /* Verde */
+    .rare { border-color: #9b59b6; }        /* Morado */
+    .legendary { border-color: #e67e22; }   /* Naranja */
+    .mythical { border-color: #e74c3c; }    /* Rojo */
+
+    .sword-name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    .sword-info {
+      font-size: 0.9rem;
+      color: #ccc;
+      line-height: 1.4;
+    }
+
+.sword-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.sword-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.sword-card:hover {
+  transform: scale(1.03);
+}
+
+.sword-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 4px solid;
+  border-radius: 8px;
+}
+
+/* Rareza visual */
+.common { border-color: #848484; }
+.uncommon { border-color: #2c8fb2; }
+.rare { border-color: #6f41cb; }
+.legendary { border-color: #9e16a1; }
+.mythical { border-color: #e74c3c; }
+
+.sword-name {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.sword-info {
+  font-size: 0.8rem;
+  color: #ccc;
+  line-height: 1.3;
+}
+
+/* Rareza visual aplicada al borde de la imagen */
+img.common    { border: 4px solid #848484; }   /* Azul */
+img.uncommon  { border: 4px solid #2c8fb2; }   /* Verde */
+img.rare      { border: 4px solid #6f41cb; }   /* Morado */
+img.legendary { border: 4px solid #9e16a1; }   /* Naranja */
+img.mythical  { border: 4px solid #e74c3c; }   /* Rojo */
+
+
+  </style>
+
+<script>
+  function ordenarPorRareza() {
+    const rarezaOrden = ['common', 'uncommon', 'rare', 'legendary', 'mythical'];
+    const grid = document.querySelector('#all .sword-grid');
+    const cards = Array.from(grid.children);
+
+    const ordenadas = cards.sort((a, b) => {
+      const rarezaA = a.querySelector('img').classList[0];
+      const rarezaB = b.querySelector('img').classList[0];
+      return rarezaOrden.indexOf(rarezaA) - rarezaOrden.indexOf(rarezaB);
+    });
+
+    grid.innerHTML = '';
+    ordenadas.forEach(card => grid.appendChild(card));
+  }
+
+  // Ejecuta al cargar
+  window.addEventListener('DOMContentLoaded', ordenarPorRareza);
+</script>
+
+
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="blox-navbar">
+    <a href="/bloxfruit/bloxfruit.html">
+      <img src="/files/Bloxfruitslogot.png" alt="Blox Fruits Logo" class="logo">
+    </a>
+    <div class="nav-links">
+      <a href="/Bloxfruits/fruits.html">🍍 Fruits</a>
+      <a href="/Bloxfruits/codes.html">🎁 Codes</a>
+      <a href="/Bloxfruits/update.html">🛠️ Update</a>
+      <a href="/Bloxfruits/races.html">🧬 Races</a>
+      <a href="/Bloxfruits/fstyles.html">🥋 F.Styles</a>
+      <a href="/Bloxfruits/swords.html">⚔️ Swords</a>
+    </div>
+  </div>
+
+<!-- Selector de Sea -->
+<div class="selector">
+  <button onclick="showSea('all')">🌍 All Seas</button>
+  <button onclick="showSea('sea1')">🌊 Sea 1</button>
+  <button onclick="showSea('sea2')">🌊 Sea 2</button>
+  <button onclick="showSea('sea3')">🌊 Sea 3</button>
+</div>
+
+<!-- Secciones -->
+<div class="section active" id="all">
+  <div class="sword-grid">
+    <!-- Aquí van las 40 espadas -->
+
+<div class="sword-card">
+  <img src="/files/katana.png" class="common" alt="Katana">
+  <div class="sword-name">Katana</div>
+  <div class="sword-info">Common • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/iron_mace.png" class="uncommon" alt="Iron Mace">
+  <div class="sword-name">Iron Mace</div>
+  <div class="sword-info">Common • Drop de Gorilla King</div>
+</div>
+
+<div class="sword-card">
+      <img src="/files/Wardens_Sword.png" class="uncommon" alt="Warden's Sword">
+      <div class="sword-name">Warden Sword</div>
+      <div class="sword-info">Uncommon • Drop de Warden</div>
+    </div>
+
+<div class="sword-card">
+  <img src="/files/triple_katana.png" class="uncommon" alt="Triple Katana">
+  <div class="sword-name">Triple Katana</div>
+  <div class="sword-info">Uncommon • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/dual_katana.png" class="common" alt="Dual Katana">
+  <div class="sword-name">Dual Katana</div>
+  <div class="sword-info">Uncommon • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/pipe.png" class="rare" alt="Pipe">
+  <div class="sword-name">Pipe</div>
+  <div class="sword-info">Rare • Drop de Don Swan</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/twin_hooks.png" class="uncommon" alt="Twin Hooks">
+  <div class="sword-name">Twin Hooks</div>
+  <div class="sword-info">Rare • Drop de Captain Elephant</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Shizu.png" class="legendary" alt="Shisui">
+  <div class="sword-name">Shisui</div>
+  <div class="sword-info">Legendary • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Oroshi.png" class="legendary" alt="Wando">
+  <div class="sword-name">Wando</div>
+  <div class="sword-info">Legendary • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Saishi.png" class="legendary" alt="Saddi">
+  <div class="sword-name">Saddi</div>
+  <div class="sword-info">Legendary • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/cursed_dual_katana.png" class="mythical" alt="Cursed Dual Katana">
+  <div class="sword-name">Cursed Dual Katana</div>
+  <div class="sword-info">Mythical • Puzzle + Boss</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/yama.png" class="legendary" alt="Yama">
+  <div class="sword-name">Yama</div>
+  <div class="sword-info">Legendary • Puzzle + Boss</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/tushita.png" class="legendary" alt="Tushita">
+  <div class="sword-name">Tushita</div>
+  <div class="sword-info">Legendary • Puzzle + Boss</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/longsword.png" class="rare" alt="Longsword">
+  <div class="sword-name">Longsword</div>
+  <div class="sword-info">Common • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Dual-Headed_Blade.png" class="rare" alt="Dual-Headed Blade">
+  <div class="sword-name">Dual-Headed Blade</div>
+  <div class="sword-info">Rare • Drop de Stone</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Gravity_Blade.png" class="rare" alt="Gravity Cane">
+  <div class="sword-name">Gravity Cane</div>
+  <div class="sword-info">Rare • Drop de Fajita</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Flail.png" class="rare" alt="Flail">
+  <div class="sword-name">Flail</div>
+  <div class="sword-info">Rare • Drop de Smokey</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Trident.png" class="rare" alt="Shark Sword">
+  <div class="sword-name">Tridente</div>
+  <div class="sword-info">Rare • Drop de Fishman Lord</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/bisento.png" class="legendary" alt="Bisento">
+  <div class="sword-name">Bisento</div>
+  <div class="sword-info">Legendary • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Koko.png" class="legendary" alt="Koko">
+  <div class="sword-name">Koko</div>
+  <div class="sword-info">Legendary • Drop de Diamond</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/hallow_scythe.png" class="mythical" alt="Hallow Scythe">
+  <div class="sword-name">Hallow Scythe</div>
+  <div class="sword-info">Mythical • Evento de Halloween</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Triple_Dark_Blade.png" class="mythical" alt="Triple Dark Blade">
+  <div class="sword-name">Triple Dark Blade</div>
+  <div class="sword-info">Mythical • Puzzle + Boss</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Fox_Lamp.png" class="legendary" alt="Fox Lamp">
+  <div class="sword-name">Fox Lamp</div>
+  <div class="sword-info">Mythical • Evento especial</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/dragon_trident.png" class="rare" alt="Dragon Trident">
+  <div class="sword-name">Dragon Trident</div>
+  <div class="sword-info">Legendary • Drop de Dragon Crew Warrior</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Cutlass.png" class="common" alt="Cutlass">
+  <div class="sword-name">Cutlass</div>
+  <div class="sword-info">Common • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Shark_Saw.png" class="uncommon" alt="Shark Saw">
+  <div class="sword-name">Shark Saw</div>
+  <div class="sword-info">Uncommon • Drop de The Saw</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Saber.png" class="legendary" alt="Saber">
+  <div class="sword-name">Saber</div>
+  <div class="sword-info">Legendary • Puzzle + Boss</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Dark_Blade.png" class="mythical" alt="Dark Blade">
+  <div class="sword-name">Dark Blade</div>
+  <div class="sword-info">Legendary • Gamepass</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Soul_Cane.png" class="rare" alt="Soul Cane">
+  <div class="sword-name">Soul Cane</div>
+  <div class="sword-info">Rare • Compra en tienda</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Rengoku.png" class="legendary" alt="Rengoku">
+  <div class="sword-name">Rengoku</div>
+  <div class="sword-info">Legendary • Drop de NPC secreto</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Buddy_Sword.png" class="legendary" alt="Buddy Sword">
+  <div class="sword-name">Buddy Sword</div>
+  <div class="sword-info">Legendary • Drop de Cake Prince</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Midnight_Blade.png" class="legendary" alt="Midnight Blade">
+  <div class="sword-name">Midnight Blade</div>
+  <div class="sword-info">Legendary • Puzzle + NPC</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Canvander.png" class="legendary" alt="Canvander">
+  <div class="sword-name">Canvander</div>
+  <div class="sword-info">Legendary • Drop de Elite Pirate</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Pole_v1.png" class="legendary" alt="Pole V1">
+  <div class="sword-name">Pole V1</div>
+  <div class="sword-info">Legendary • Drop de Elite Pirate</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/Pole_v2.png" class="legendary" alt="Pole V2">
+  <div class="sword-name">Pole V2</div>
+  <div class="sword-info">Legendary • Drop de Elite Pirate</div>
+</div>
+
+<div class="sword-card">
+  <img src="/files/True_Triple_Katana.png" class="mythical" alt="True Triple Katana">
+  <div class="sword-name">True Triple Katana</div>
+  <div class="sword-info">Mythical • Puzzle + 3 espadas legendarias</div>
+</div>
+
+
+  </div>
+</div>
+
+<div class="section" id="sea1">
+  <div class="sword-grid">
+    <!-- Espadas del Sea 1 -->
+  </div>
+</div>
+
+<div class="section" id="sea2">
+  <div class="sword-grid">
+    <!-- Espadas del Sea 2 -->
+  </div>
+</div>
+
+<div class="section" id="sea3">
+  <div class="sword-grid">
+    <!-- Espadas del Sea 3 -->
+  </div>
+</div>
+
+<script>
+  function showSea(seaId) {
+    document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(seaId).classList.add('active');
+  }
+</script>
